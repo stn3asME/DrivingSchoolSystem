@@ -23,5 +23,11 @@ namespace DrivingSchoolSystem
             //fanele wenze amachanges kwi branch ehlukile no main branch as follows...
             //then code until ube satified nge code yakho, after that uzoya ku gitChanges
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //just testing it!
+
+        }
     }
 }

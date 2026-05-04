@@ -1,6 +1,6 @@
 ﻿namespace DrivingSchoolSystem
 {
-    partial class Form1
+    partial class ExampleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,7 @@
             this.label3.Text = "a change";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Form1
+            // ExampleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "ExampleForm";
             this.Text = "example";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

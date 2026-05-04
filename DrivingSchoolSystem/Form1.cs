@@ -29,5 +29,11 @@ namespace DrivingSchoolSystem
             //just testing it!
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //waqeda ukwenza i cngane usave ngo push
+            //if sewujabule ngokwenzile uzoshay upush then go to git changes
+        }
     }
 }

@@ -112,7 +112,7 @@
     <None Include="Resources\usernamw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\password icon.png" />
+    <None Include="Resources\password_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

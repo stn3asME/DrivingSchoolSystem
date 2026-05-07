@@ -41,7 +41,7 @@ namespace Driving_school_login_form
        
         private void button1_Click(object sender, EventArgs e)
         {
-            string connstring =  "Data Source=146.230.177.46;Initial Catalog=GroupWst27;Persist Security Info=True;User ID=GroupWst27;Password=***********;";
+            string connstring =  "Data Source=146.230.177.46;Initial Catalog=GroupWst27;Persist Security Info=True;User ID=GroupWst27;Password=mhfd5;";
 
 
             using (SqlConnection conn = new SqlConnection(connstring))
@@ -49,7 +49,7 @@ namespace Driving_school_login_form
 
                 try
                 {
-                    string query = "Select  1 FROM UserAccounts WHERE   username=@user  AND [password]=@pass ";
+                    string query = "Select  1 FROM staff WHERE   email=@user  AND password=@pass ";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -72,7 +72,7 @@ namespace Driving_school_login_form
                         else
                         {
                             // No data → login failed
-                            MessageBox.Show("wrong password or username");
+                            MessageBox.Show("wrong password or email");
                         }
                         // reader.Close();
 

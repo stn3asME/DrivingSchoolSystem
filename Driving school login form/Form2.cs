@@ -26,5 +26,28 @@ namespace Driving_school_login_form
         {
           // Application.Run(new Form2());
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Application.Exit();
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void registerStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 registerStudent = new Form3();
+            registerStudent.Show();
+            this.Hide();
+
+        }
+
+        private void bookLessonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BookLessonForm book = new BookLessonForm();
+            book.Show();
+            this.Hide();
+        }
     }
 }

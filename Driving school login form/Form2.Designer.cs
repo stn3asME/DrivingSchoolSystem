@@ -37,8 +37,12 @@
             this.updateStudentProgressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sCHEDULEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.log_out = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -50,83 +54,125 @@
             this.sCHEDULEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // sTUDENTSToolStripMenuItem
             // 
-            this.sTUDENTSToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sTUDENTSToolStripMenuItem.BackgroundImage")));
             this.sTUDENTSToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sTUDENTSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registerStudentToolStripMenuItem,
             this.bookLessonToolStripMenuItem});
-            this.sTUDENTSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sTUDENTSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sTUDENTSToolStripMenuItem.Image")));
+            this.sTUDENTSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sTUDENTSToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.sTUDENTSToolStripMenuItem.Name = "sTUDENTSToolStripMenuItem";
-            this.sTUDENTSToolStripMenuItem.Size = new System.Drawing.Size(90, 21);
+            this.sTUDENTSToolStripMenuItem.Size = new System.Drawing.Size(82, 25);
             this.sTUDENTSToolStripMenuItem.Text = "Students";
             // 
             // registerStudentToolStripMenuItem
             // 
             this.registerStudentToolStripMenuItem.BackColor = System.Drawing.SystemColors.HotTrack;
             this.registerStudentToolStripMenuItem.Name = "registerStudentToolStripMenuItem";
-            this.registerStudentToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.registerStudentToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.registerStudentToolStripMenuItem.Text = "Register Student";
+            this.registerStudentToolStripMenuItem.Click += new System.EventHandler(this.registerStudentToolStripMenuItem_Click);
             // 
             // bookLessonToolStripMenuItem
             // 
             this.bookLessonToolStripMenuItem.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bookLessonToolStripMenuItem.Name = "bookLessonToolStripMenuItem";
-            this.bookLessonToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.bookLessonToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.bookLessonToolStripMenuItem.Text = "Book Lesson";
+            this.bookLessonToolStripMenuItem.Click += new System.EventHandler(this.bookLessonToolStripMenuItem_Click);
             // 
             // iNSTRUCTORSToolStripMenuItem
             // 
             this.iNSTRUCTORSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateStudentProgressToolStripMenuItem});
-            this.iNSTRUCTORSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iNSTRUCTORSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("iNSTRUCTORSToolStripMenuItem.Image")));
+            this.iNSTRUCTORSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iNSTRUCTORSToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iNSTRUCTORSToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Blue;
             this.iNSTRUCTORSToolStripMenuItem.Name = "iNSTRUCTORSToolStripMenuItem";
-            this.iNSTRUCTORSToolStripMenuItem.Size = new System.Drawing.Size(102, 21);
+            this.iNSTRUCTORSToolStripMenuItem.Size = new System.Drawing.Size(96, 25);
             this.iNSTRUCTORSToolStripMenuItem.Text = "Instructors";
             // 
             // updateStudentProgressToolStripMenuItem
             // 
             this.updateStudentProgressToolStripMenuItem.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.updateStudentProgressToolStripMenuItem.Name = "updateStudentProgressToolStripMenuItem";
-            this.updateStudentProgressToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.updateStudentProgressToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.updateStudentProgressToolStripMenuItem.Text = "Update Student Progress";
             // 
             // sCHEDULEToolStripMenuItem
             // 
             this.sCHEDULEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewScheduleToolStripMenuItem});
-            this.sCHEDULEToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sCHEDULEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sCHEDULEToolStripMenuItem.Image")));
+            this.sCHEDULEToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sCHEDULEToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.sCHEDULEToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.sCHEDULEToolStripMenuItem.Name = "sCHEDULEToolStripMenuItem";
-            this.sCHEDULEToolStripMenuItem.Size = new System.Drawing.Size(97, 21);
+            this.sCHEDULEToolStripMenuItem.Size = new System.Drawing.Size(92, 25);
             this.sCHEDULEToolStripMenuItem.Text = "Schedules";
             this.sCHEDULEToolStripMenuItem.Click += new System.EventHandler(this.sCHEDULEToolStripMenuItem_Click);
             // 
             // viewScheduleToolStripMenuItem
             // 
             this.viewScheduleToolStripMenuItem.Name = "viewScheduleToolStripMenuItem";
-            this.viewScheduleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewScheduleToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.viewScheduleToolStripMenuItem.Text = "View Schedule";
             // 
-            // linkLabel1
+            // log_out
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.SystemColors.HotTrack;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(733, 9);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "LOG OUT";
+            this.log_out.ActiveLinkColor = System.Drawing.SystemColors.HotTrack;
+            this.log_out.AutoSize = true;
+            this.log_out.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.log_out.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.log_out.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.log_out.LinkColor = System.Drawing.Color.Transparent;
+            this.log_out.Location = new System.Drawing.Point(653, 9);
+            this.log_out.Name = "log_out";
+            this.log_out.Size = new System.Drawing.Size(55, 13);
+            this.log_out.TabIndex = 1;
+            this.log_out.TabStop = true;
+            this.log_out.Text = "LOG OUT";
+            this.log_out.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(714, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(538, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Manage Student";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Green;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.SystemColors.Window;
+            this.button2.Location = new System.Drawing.Point(680, 395);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 33);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Schedule Lesson";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -136,13 +182,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.log_out);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form2";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +210,9 @@
         private System.Windows.Forms.ToolStripMenuItem bookLessonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateStudentProgressToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewScheduleToolStripMenuItem;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel log_out;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

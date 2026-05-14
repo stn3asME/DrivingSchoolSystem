@@ -41,7 +41,7 @@ namespace Driving_school_login_form
        
         private void button1_Click(object sender, EventArgs e)
         {
-            string connstring =  "Data Source=146.230.177.46;Initial Catalog=GroupWst27;Persist Security Info=True;User ID=GroupWst27;Password=mhfd5;";
+            string connstring = " Data Source=146.230.177.46;Initial Catalog=GroupWst27;Persist Security Info=True;User ID=GroupWst27;Password=mhfd5";
 
 
             using (SqlConnection conn = new SqlConnection(connstring))
@@ -49,41 +49,42 @@ namespace Driving_school_login_form
 
                 try
                 {
-                    string query = "Select  1 FROM staff WHERE   email=@user  AND password=@pass ";
+                    string query = "Select  1 FROM AdminStaff WHERE   StafEmailAddress=@email  AND Password=@pass ";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
 
                         // getting values from textb0x
-                        cmd.Parameters.AddWithValue("@user", textBox1.Text.Trim());
+                        cmd.Parameters.AddWithValue("@email", textBox1.Text.Trim());
                         cmd.Parameters.AddWithValue("@pass", textBox3.Text.Trim());
 
 
                         conn.Open();
 
 
-                        // SqlDataReader reader = cmd.ExecuteReader();
+                   
                         object result = cmd.ExecuteScalar();
                         if (result != null)
                         {
                             // Data found → login success
-                            MessageBox.Show("Login successful");
+                           // MessageBox.Show("Login successful");
+                            Form2 f2 = new Form2();
+                            f2.Show();
+                            this.Hide();
                         }
                         else
                         {
-                            // No data → login failed
+                            // incorrect data/ → login failed
                             MessageBox.Show("wrong password or username");
                         }
-                        // reader.Close();
+                        
 
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                    //Console.WriteLine(ex.ToString());
                 }
-                conn.Close();
             }
 
 

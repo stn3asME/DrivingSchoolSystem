@@ -1,6 +1,6 @@
 ﻿namespace Driving_school_login_form
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -230,7 +230,7 @@
             this.textBox2.Size = new System.Drawing.Size(261, 0);
             this.textBox2.TabIndex = 2;
             // 
-            // Form1
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -238,7 +238,7 @@
             this.ClientSize = new System.Drawing.Size(794, 425);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Name = "Form1";
+            this.Name = "FormLogin";
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

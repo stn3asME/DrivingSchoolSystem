@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Driving_school_login_form
 {
-    public partial class Form3 : Form
+    public partial class RegisterStudent : Form
     {
-        public Form3()
+        public RegisterStudent()
         {
             InitializeComponent();
         }

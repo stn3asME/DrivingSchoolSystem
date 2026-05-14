@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Driving_School_System_Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,9 @@ namespace Driving_school_login_form
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            ReceptionistForm rec = new ReceptionistForm();
+            rec.Show();
+            this.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

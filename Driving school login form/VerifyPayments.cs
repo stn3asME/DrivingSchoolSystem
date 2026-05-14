@@ -30,7 +30,17 @@ namespace Driving_school_login_form
         private void VerifyPayments_Load(object sender, EventArgs e)
         {
             label5.Visible = false;
-            label6.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String stu = "";
+
+            stu+= textBox1.Text.ToString()+" ";
+            stu+= textBox2.Text.ToString();
+            label5.Text = stu;
+            label5.Visible = true;
+            
         }
     }
 }

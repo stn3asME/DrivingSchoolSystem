@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Driving_school_login_form;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Driving_School_System_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManagerForm());
+            Application.Run(new FormLogin());
         }
     }
 }

@@ -16,5 +16,10 @@ namespace Driving_School_System_Forms
         {
             InitializeComponent();
         }
+
+        private void ManagerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Driving_school_login_form
 {
-    partial class Form3
+    partial class RegisterStudent
     {
         /// <summary>
         /// Required designer variable.

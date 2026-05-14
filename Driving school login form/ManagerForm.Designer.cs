@@ -348,6 +348,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ManagerForm";
             this.Text = "Manager";
+            this.Load += new System.EventHandler(this.ManagerForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);

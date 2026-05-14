@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Driving_school_login_form
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -68,9 +68,7 @@ namespace Driving_school_login_form
                         {
                             // Data found → login success
                            // MessageBox.Show("Login successful");
-                            Form2 f2 = new Form2();
-                            f2.Show();
-                            this.Hide();
+                            //show results by role.
                         }
                         else
                         {

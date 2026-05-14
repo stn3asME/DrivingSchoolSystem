@@ -68,6 +68,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="PracticeGit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeGit.Designer.cs">
+      <DependentUpon>PracticeGit.cs</DependentUpon>
+    </Compile>
     <Compile Include="GroupWst27DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerForm.resx">
       <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeGit.resx">
+      <DependentUpon>PracticeGit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

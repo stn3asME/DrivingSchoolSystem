@@ -11,3 +11,6 @@ C:\Users\Student\source\repos\Driving school login form\obj\Debug\Driving school
 C:\Users\Student\source\repos\Driving school login form\obj\Debug\Driving school login form.pdb
 C:\Users\Student\source\repos\Driving school login form\obj\Debug\Driving_school_login_form.Form2.resources
 C:\Users\Student\source\repos\Driving school login form\obj\Debug\Driving_school_login_form.Form3.resources
+C:\Users\Student\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe
+C:\Users\Student\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.pdb

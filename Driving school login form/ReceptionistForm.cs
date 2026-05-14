@@ -34,5 +34,12 @@ namespace Driving_School_System_Forms
             stud.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            VerifyPayments ver = new VerifyPayments();
+            ver.Show();
+            this.Hide();
+        }
     }
 }

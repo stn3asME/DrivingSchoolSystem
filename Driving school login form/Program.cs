@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Driving_school_login_form
+namespace Driving_School_System_Forms
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Driving_school_login_form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ManagerForm());
         }
     }
 }

@@ -80,14 +80,22 @@ namespace Driving_school_login_form
                         {
                             if (checkRole(connstring, "receptionist"))
                             {
-                                MessageBox.Show("wussup dum dum?");
+                                ReceptionistForm rec = new ReceptionistForm();
+                                rec.Show();
+                                this.Hide();
                             }
                             else if(checkRole(connstring, "Instructor"))
                             {
-                                MessageBox.Show("You smart");
-                            }else if(checkRole(connstring, "Manager"))
+                                InstructorForm ins= new InstructorForm();
+                                ins.Show();
+                                this.Hide();
+                            }
+                            else if(checkRole(connstring, "Manager"))
                             {
-                                MessageBox.Show("This is indeed a mananger");
+                                ManagerForm man = new ManagerForm();
+                                man.Show();
+                                this.Hide();
+                               
                             }
 
 

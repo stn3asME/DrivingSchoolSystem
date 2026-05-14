@@ -240,6 +240,7 @@
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "Form1";
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

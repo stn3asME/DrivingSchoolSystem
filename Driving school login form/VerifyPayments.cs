@@ -16,5 +16,21 @@ namespace Driving_school_login_form
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerifyPayments_Load(object sender, EventArgs e)
+        {
+            label5.Visible = false;
+            label6.Visible = false;
+        }
     }
 }

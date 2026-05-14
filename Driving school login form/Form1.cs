@@ -82,6 +82,13 @@ namespace Driving_school_login_form
                             {
                                 MessageBox.Show("wussup dum dum?");
                             }
+                            else if(checkRole(connstring, "Instructor"))
+                            {
+                                MessageBox.Show("You smart");
+                            }else if(checkRole(connstring, "Manager"))
+                            {
+                                MessageBox.Show("This is indeed a mananger");
+                            }
 
 
 
@@ -115,21 +122,22 @@ namespace Driving_school_login_form
 
                 try
                 {
-                    string query = "Select  1 FROM AdminStaff WHERE   Role=@role";
+                    string query = "Select  1 FROM AdminStaff WHERE   Role=@role and StafEmailAddress=@email  AND Password=@pass";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    using (SqlCommand cmd2 = new SqlCommand(query, conn))
                     {
 
                         // getting values from textb0x
-                        cmd.Parameters.AddWithValue("@role", role.Trim());
-
+                        cmd2.Parameters.AddWithValue("@role".ToLower(), role.Trim().ToLower());
+                        cmd2.Parameters.AddWithValue("@email", textBox1.Text.Trim());
+                        cmd2.Parameters.AddWithValue("@pass", textBox3.Text.Trim());
 
                         conn.Open();
 
 
 
 
-                        object result = cmd.ExecuteScalar();
+                        object result = cmd2.ExecuteScalar();
                         if (result != null)
                         {
                             return true;

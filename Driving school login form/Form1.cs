@@ -106,5 +106,18 @@ namespace Driving_school_login_form
         {
 
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form f1 = new VehicleForm();
+            f1.Show();
+            this.Hide();
+
+        }
     }
 }

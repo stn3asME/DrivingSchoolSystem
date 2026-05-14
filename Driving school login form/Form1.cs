@@ -1,16 +1,19 @@
-﻿using System;
+﻿using Driving_School_System_Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Driving_school_login_form
 {
+    
     public partial class FormLogin : Form
     {
         public FormLogin()
@@ -49,7 +52,7 @@ namespace Driving_school_login_form
 
                 try
                 {
-                    string query = "Select  1 FROM AdminStaff WHERE   StafEmailAddress=@email  AND Password=@pass ";
+                    string query = "Select  Role FROM AdminStaff WHERE   StafEmailAddress=@email  AND Password=@pass ";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -67,8 +70,16 @@ namespace Driving_school_login_form
                         if (result != null)
                         {
                             // Data found → login success
-                           // MessageBox.Show("Login successful");
+                            MessageBox.Show("Login successful");
                             //show results by role.
+                            string role = result.ToString();
+                            Session.Role = role;
+
+                            MessageBox.Show("Login successful: " + role);
+
+                            OpenRoleForm(role);
+
+                            this.Hide();
                         }
                         else
                         {
@@ -83,11 +94,37 @@ namespace Driving_school_login_form
                 {
                     MessageBox.Show(ex.Message);
                 }
+
             }
 
 
 
             
+        }
+        private void OpenRoleForm(string role)
+        {
+            Form nextForm = null;
+
+            switch (role)
+            {
+                case "Receptionist":
+                    nextForm = new ReceptionistForm();
+                    break;
+
+                case "Instructor":
+                    nextForm = new InstructorForm();
+                    break;
+
+                case "Manager":
+                    nextForm = new ManagerForm();
+                    break;
+
+                default:
+                    MessageBox.Show("Unknown role: " + role);
+                    return;
+            }
+
+            nextForm.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -109,5 +146,9 @@ namespace Driving_school_login_form
         {
 
         }
+    }
+    public static class Session
+    {
+        public static string Role;
     }
 }

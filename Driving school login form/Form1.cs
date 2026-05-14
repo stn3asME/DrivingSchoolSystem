@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Driving_School_System_Forms;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq.Expressions;
 
 namespace Driving_school_login_form
 {
@@ -49,7 +52,7 @@ namespace Driving_school_login_form
 
                 try
                 {
-                    string query = "Select  1 FROM AdminStaff WHERE   StafEmailAddress=@email  AND Password=@pass ";
+                    string query = "Select  1 FROM AdminStaff WHERE   StafEmailAddress=@email  AND Password=@pass";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -62,23 +65,46 @@ namespace Driving_school_login_form
                         conn.Open();
 
 
-                   
+
+
                         object result = cmd.ExecuteScalar();
-                        if (result != null)
+
+                        if (result == null)
                         {
                             // Data found → login success
-                           // MessageBox.Show("Login successful");
+                            // MessageBox.Show("Login successful");
                             //show results by role.
+                            MessageBox.Show("wrong Password or username");
                         }
                         else
                         {
-                            // incorrect data/ → login failed
-                            MessageBox.Show("wrong password or username");
+                            if (checkRole(connstring, "receptionist"))
+                            {
+                                MessageBox.Show("wussup dum dum?");
+                            }
+                            else if(checkRole(connstring, "Instructor"))
+                            {
+                                MessageBox.Show("You smart");
+                            }else if(checkRole(connstring, "Manager"))
+                            {
+                                MessageBox.Show("This is indeed a mananger");
+                            }
+
+
+
+
+
+
+
+
+
                         }
-                        
 
                     }
                 }
+                
+
+
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
@@ -89,6 +115,49 @@ namespace Driving_school_login_form
 
             
         }
+        private bool checkRole(String connstring, String role)
+        {
+            using (SqlConnection conn = new SqlConnection(connstring))
+            {
+
+                try
+                {
+                    string query = "Select  1 FROM AdminStaff WHERE   Role=@role and StafEmailAddress=@email  AND Password=@pass";
+
+                    using (SqlCommand cmd2 = new SqlCommand(query, conn))
+                    {
+
+                        // getting values from textb0x
+                        cmd2.Parameters.AddWithValue("@role".ToLower(), role.Trim().ToLower());
+                        cmd2.Parameters.AddWithValue("@email", textBox1.Text.Trim());
+                        cmd2.Parameters.AddWithValue("@pass", textBox3.Text.Trim());
+
+                        conn.Open();
+
+
+
+
+                        object result = cmd2.ExecuteScalar();
+                        if (result != null)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
+                   
+                }
+            }
+        }
+
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

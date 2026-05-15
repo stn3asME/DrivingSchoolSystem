@@ -46,5 +46,12 @@ namespace Driving_School_System_Forms
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            this.Hide();
+        }
     }
 }

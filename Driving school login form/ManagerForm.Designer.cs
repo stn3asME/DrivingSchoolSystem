@@ -54,6 +54,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -199,6 +200,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel3.Controls.Add(this.button12);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
@@ -340,6 +342,18 @@
             this.button9.Text = "MANAGE STUDENTS";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Red;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(483, 8);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(107, 28);
+            this.button12.TabIndex = 24;
+            this.button12.Text = "BACK";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,6 +407,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button12;
     }
 }
 

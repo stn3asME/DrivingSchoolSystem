@@ -15,9 +15,6 @@ C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\bin\De
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\bin\Debug\Driving school login form.exe
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\bin\Debug\Driving school login form.pdb
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.AssemblyReference.cache
-C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.Form1.resources
-C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.Form2.resources
-C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.Form3.resources
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_School_System_Forms.InstructorForm.resources
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_School_System_Forms.ManagerForm.resources
 C:\Users\asibo\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.Properties.Resources.resources
@@ -60,3 +57,8 @@ C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving sc
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.CoreCompileInputs.cache
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.pdb
+C:\Users\asibo\Source\Repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe.config
+C:\Users\asibo\Source\Repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.FormLogin.resources
+C:\Users\asibo\Source\Repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.VerifyPayments.resources
+C:\Users\asibo\Source\Repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.RegisterStudent.resources
+C:\Users\asibo\Source\Repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.PracticeGit.resources

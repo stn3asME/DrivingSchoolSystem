@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Driving_school_login_form;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace Driving_School_System_Forms
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            this.Hide();
         }
     }
 }

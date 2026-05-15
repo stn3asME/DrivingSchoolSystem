@@ -42,5 +42,25 @@ namespace Driving_school_login_form
             label5.Visible = true;
             
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            String stu = "";
+
+            stu += textBox1.Text.ToString() + " ";
+            stu += textBox2.Text.ToString();
+            label5.Text = stu;
+            label5.Visible = true;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            String stu = "";
+
+            stu += textBox1.Text.ToString() + " ";
+            stu += textBox2.Text.ToString();
+            label5.Text = stu;
+            label5.Visible = true;
+        }
     }
 }

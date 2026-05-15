@@ -60,3 +60,20 @@ C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving sc
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.CoreCompileInputs.cache
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe
 C:\Users\Student\source\repos\DrivingSchoolSystem\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.pdb
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\bin\Debug\Driving school login form.exe.config
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\bin\Debug\Driving school login form.exe
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\bin\Debug\Driving school login form.pdb
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.AssemblyReference.cache
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.FormLogin.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.VerifyPayments.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.RegisterStudent.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_School_System_Forms.InstructorForm.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_School_System_Forms.ManagerForm.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.PracticeGit.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_school_login_form.Properties.Resources.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving_School_System_Forms.ReceptionistForm.resources
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.GenerateResource.cache
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.csproj.CoreCompileInputs.cache
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.pdb
+C:\Users\223004085\source\repos\DrivingSchoolSystem\Driving school login form\obj\Debug\Driving school login form.exe.config

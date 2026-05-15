@@ -41,5 +41,10 @@ namespace Driving_School_System_Forms
             ver.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

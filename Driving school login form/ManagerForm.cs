@@ -21,5 +21,10 @@ namespace Driving_School_System_Forms
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

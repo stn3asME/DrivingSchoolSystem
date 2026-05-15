@@ -1766,17 +1766,15 @@ namespace Driving_school_login_form {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class StudentDataTable : global::System.Data.TypedTableBase<StudentRow> {
             
-            private global::System.Data.DataColumn columnStudentID;
+            private global::System.Data.DataColumn columnStudEmailAdderss;
             
-            private global::System.Data.DataColumn columnFullName;
+            private global::System.Data.DataColumn columnFullNames;
             
-            private global::System.Data.DataColumn columnPhoneNumber;
-            
-            private global::System.Data.DataColumn columnEmail;
+            private global::System.Data.DataColumn columnPhoneNum;
             
             private global::System.Data.DataColumn columnDateOfBirth;
             
-            private global::System.Data.DataColumn columnAdddress;
+            private global::System.Data.DataColumn columnAddress;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1813,33 +1811,25 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn StudentIDColumn {
+            public global::System.Data.DataColumn StudEmailAdderssColumn {
                 get {
-                    return this.columnStudentID;
+                    return this.columnStudEmailAdderss;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FullNameColumn {
+            public global::System.Data.DataColumn FullNamesColumn {
                 get {
-                    return this.columnFullName;
+                    return this.columnFullNames;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PhoneNumberColumn {
+            public global::System.Data.DataColumn PhoneNumColumn {
                 get {
-                    return this.columnPhoneNumber;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EmailColumn {
-                get {
-                    return this.columnEmail;
+                    return this.columnPhoneNum;
                 }
             }
             
@@ -1853,9 +1843,9 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AdddressColumn {
+            public global::System.Data.DataColumn AddressColumn {
                 get {
-                    return this.columnAdddress;
+                    return this.columnAddress;
                 }
             }
             
@@ -1896,15 +1886,14 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StudentRow AddStudentRow(int StudentID, string FullName, string PhoneNumber, string Email, System.DateTime DateOfBirth, string Adddress) {
+            public StudentRow AddStudentRow(int StudEmailAdderss, string FullNames, string PhoneNum, System.DateTime DateOfBirth, string Address) {
                 StudentRow rowStudentRow = ((StudentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        StudentID,
-                        FullName,
-                        PhoneNumber,
-                        Email,
+                        StudEmailAdderss,
+                        FullNames,
+                        PhoneNum,
                         DateOfBirth,
-                        Adddress};
+                        Address};
                 rowStudentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStudentRow);
                 return rowStudentRow;
@@ -1912,9 +1901,9 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StudentRow FindByStudentID(int StudentID) {
+            public StudentRow FindByStudEmailAdderss(int StudEmailAdderss) {
                 return ((StudentRow)(this.Rows.Find(new object[] {
-                            StudentID})));
+                            StudEmailAdderss})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1934,40 +1923,36 @@ namespace Driving_school_login_form {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnStudentID = base.Columns["StudentID"];
-                this.columnFullName = base.Columns["FullName"];
-                this.columnPhoneNumber = base.Columns["PhoneNumber"];
-                this.columnEmail = base.Columns["Email"];
+                this.columnStudEmailAdderss = base.Columns["StudEmailAdderss"];
+                this.columnFullNames = base.Columns["FullNames"];
+                this.columnPhoneNum = base.Columns["PhoneNum"];
                 this.columnDateOfBirth = base.Columns["DateOfBirth"];
-                this.columnAdddress = base.Columns["Adddress"];
+                this.columnAddress = base.Columns["Address"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnStudentID = new global::System.Data.DataColumn("StudentID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStudentID);
-                this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFullName);
-                this.columnPhoneNumber = new global::System.Data.DataColumn("PhoneNumber", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPhoneNumber);
-                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmail);
+                this.columnStudEmailAdderss = new global::System.Data.DataColumn("StudEmailAdderss", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStudEmailAdderss);
+                this.columnFullNames = new global::System.Data.DataColumn("FullNames", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFullNames);
+                this.columnPhoneNum = new global::System.Data.DataColumn("PhoneNum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhoneNum);
                 this.columnDateOfBirth = new global::System.Data.DataColumn("DateOfBirth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDateOfBirth);
-                this.columnAdddress = new global::System.Data.DataColumn("Adddress", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAdddress);
+                this.columnAddress = new global::System.Data.DataColumn("Address", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAddress);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnStudentID}, true));
-                this.columnStudentID.AllowDBNull = false;
-                this.columnStudentID.Unique = true;
-                this.columnFullName.AllowDBNull = false;
-                this.columnFullName.MaxLength = 50;
-                this.columnPhoneNumber.AllowDBNull = false;
-                this.columnPhoneNumber.MaxLength = 50;
-                this.columnEmail.MaxLength = 50;
+                                this.columnStudEmailAdderss}, true));
+                this.columnStudEmailAdderss.AllowDBNull = false;
+                this.columnStudEmailAdderss.Unique = true;
+                this.columnFullNames.AllowDBNull = false;
+                this.columnFullNames.MaxLength = 50;
+                this.columnPhoneNum.AllowDBNull = false;
+                this.columnPhoneNum.MaxLength = 50;
                 this.columnDateOfBirth.AllowDBNull = false;
-                this.columnAdddress.MaxLength = 2147483647;
+                this.columnAddress.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3175,50 +3160,34 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int StudentID {
+            public int StudEmailAdderss {
                 get {
-                    return ((int)(this[this.tableStudent.StudentIDColumn]));
+                    return ((int)(this[this.tableStudent.StudEmailAdderssColumn]));
                 }
                 set {
-                    this[this.tableStudent.StudentIDColumn] = value;
+                    this[this.tableStudent.StudEmailAdderssColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FullName {
+            public string FullNames {
                 get {
-                    return ((string)(this[this.tableStudent.FullNameColumn]));
+                    return ((string)(this[this.tableStudent.FullNamesColumn]));
                 }
                 set {
-                    this[this.tableStudent.FullNameColumn] = value;
+                    this[this.tableStudent.FullNamesColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PhoneNumber {
+            public string PhoneNum {
                 get {
-                    return ((string)(this[this.tableStudent.PhoneNumberColumn]));
+                    return ((string)(this[this.tableStudent.PhoneNumColumn]));
                 }
                 set {
-                    this[this.tableStudent.PhoneNumberColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Email {
-                get {
-                    try {
-                        return ((string)(this[this.tableStudent.EmailColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Email\' in table \'Student\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableStudent.EmailColumn] = value;
+                    this[this.tableStudent.PhoneNumColumn] = value;
                 }
             }
             
@@ -3235,42 +3204,30 @@ namespace Driving_school_login_form {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Adddress {
+            public string Address {
                 get {
                     try {
-                        return ((string)(this[this.tableStudent.AdddressColumn]));
+                        return ((string)(this[this.tableStudent.AddressColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Adddress\' in table \'Student\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Address\' in table \'Student\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableStudent.AdddressColumn] = value;
+                    this[this.tableStudent.AddressColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsEmailNull() {
-                return this.IsNull(this.tableStudent.EmailColumn);
+            public bool IsAddressNull() {
+                return this.IsNull(this.tableStudent.AddressColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetEmailNull() {
-                this[this.tableStudent.EmailColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAdddressNull() {
-                return this.IsNull(this.tableStudent.AdddressColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAdddressNull() {
-                this[this.tableStudent.AdddressColumn] = global::System.Convert.DBNull;
+            public void SetAddressNull() {
+                this[this.tableStudent.AddressColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5402,12 +5359,11 @@ SELECT StaffID, FullName, PhoneNumber, Role, Address, Email FROM Staff WHERE (St
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Student";
-            tableMapping.ColumnMappings.Add("StudentID", "StudentID");
-            tableMapping.ColumnMappings.Add("FullName", "FullName");
-            tableMapping.ColumnMappings.Add("PhoneNumber", "PhoneNumber");
-            tableMapping.ColumnMappings.Add("Email", "Email");
+            tableMapping.ColumnMappings.Add("StudentID", "StudEmailAdderss");
+            tableMapping.ColumnMappings.Add("FullName", "FullNames");
+            tableMapping.ColumnMappings.Add("PhoneNumber", "PhoneNum");
             tableMapping.ColumnMappings.Add("DateOfBirth", "DateOfBirth");
-            tableMapping.ColumnMappings.Add("Adddress", "Adddress");
+            tableMapping.ColumnMappings.Add("Adddress", "Address");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -5459,12 +5415,23 @@ SELECT StudentID, FullName, PhoneNumber, Email, DateOfBirth, Adddress FROM Stude
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT StudentID, FullName, PhoneNumber, Email, DateOfBirth, Adddress FROM dbo.St" +
-                "udent";
+            this._commandCollection[0].CommandText = "SELECT StudentID, FullName, PhoneNumber, DateOfBirth, Adddress FROM Student";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT StudEmailAddress, FullNames, PhoneNum, DateOfBirth, Address FROM Student W" +
+                "HERE (FullNames LIKE @name)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "FullNames", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT StudEmailAddress, FullNames, PhoneNum, DateOfBirth, Address FROM Student W" +
+                "HERE (FullNames LIKE @name)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "FullNames", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5486,6 +5453,78 @@ SELECT StudentID, FullName, PhoneNumber, Email, DateOfBirth, Adddress FROM Stude
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual GroupWst27DataSet.StudentDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            GroupWst27DataSet.StudentDataTable dataTable = new GroupWst27DataSet.StudentDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(GroupWst27DataSet.StudentDataTable dataTable, string name) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((name == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(name));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual GroupWst27DataSet.StudentDataTable GetDataBy(string name) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((name == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(name));
+            }
+            GroupWst27DataSet.StudentDataTable dataTable = new GroupWst27DataSet.StudentDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy1(GroupWst27DataSet.StudentDataTable dataTable, string name) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((name == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(name));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual GroupWst27DataSet.StudentDataTable GetDataBy1(string name) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((name == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(name));
+            }
             GroupWst27DataSet.StudentDataTable dataTable = new GroupWst27DataSet.StudentDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -5677,14 +5716,6 @@ SELECT StudentID, FullName, PhoneNumber, Email, DateOfBirth, Adddress FROM Stude
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string FullName, string PhoneNumber, string Email, System.DateTime DateOfBirth, string Adddress, int Original_StudentID, string Original_FullName, string Original_PhoneNumber, string Original_Email, System.DateTime Original_DateOfBirth) {
-            return this.Update(Original_StudentID, FullName, PhoneNumber, Email, DateOfBirth, Adddress, Original_StudentID, Original_FullName, Original_PhoneNumber, Original_Email, Original_DateOfBirth);
         }
     }
     

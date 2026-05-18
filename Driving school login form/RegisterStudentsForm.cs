@@ -23,7 +23,11 @@ namespace Driving_school_login_form
             this.studentTableAdapter.Fill(this.groupWst27DataSet2.Student);
 
         }
-
+        public void makeInv()
+        {
+            this.btnUpdate.Visible = false;
+        }
+        
         private void searchtextBox_TextChanged(object sender, EventArgs e)
         {
             studentTableAdapter1.FillBySearch(groupWst27DataSet2.Student, searchtextBox.Text);

@@ -26,6 +26,7 @@ namespace Driving_school_login_form
         public void makeInv()
         {
             this.btnUpdate.Visible = false;
+            this.btnDelete.Visible = false;
         }
         
         private void searchtextBox_TextChanged(object sender, EventArgs e)

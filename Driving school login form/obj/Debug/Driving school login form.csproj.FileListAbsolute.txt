@@ -14,3 +14,4 @@ C:\Users\MC\source\repos\DrivingSchoolSystem\Driving School\Driving school login
 C:\Users\MC\source\repos\DrivingSchoolSystem\Driving School\Driving school login form\obj\Debug\Driving school login form.csproj.CoreCompileInputs.cache
 C:\Users\MC\source\repos\DrivingSchoolSystem\Driving School\Driving school login form\obj\Debug\Driving school login form.exe
 C:\Users\MC\source\repos\DrivingSchoolSystem\Driving School\Driving school login form\obj\Debug\Driving school login form.pdb
+C:\Users\MC\source\repos\DrivingSchoolSystem\Driving School\Driving school login form\obj\Debug\Driving school login form.exe.config
